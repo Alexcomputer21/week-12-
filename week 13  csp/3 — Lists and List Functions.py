@@ -87,5 +87,45 @@ list_of_items = list(range(1, 1001)) # creates a list of numbers
 print(list_of_items)
 print(len(list_of_items)) # 1000 (len) = how long it is which in this case has 1000 numbers
 #extend by a 1000 more items
-list_of_items.extend(1001, 2001)
+list_of_items.extend(range(1001, 2001))
 print(len(list_of_items)) #2000
+
+# MOST IMPORTANT QUESTION: WHY USE A LIST?
+# instead of creating seperate variables
+# for each item, we can store them in a list
+# this makes our job easier
+# this makes managing the complexity of our code easier
+# when we need to manage multiple items
+# performance task answer
+
+#sets and tuples
+# sets and tuples are also part of the collections
+# family in Python
+# sets examples:
+set1 = {1,2,3,4,5}
+set2 = {"apple", "banana", "cherry"}
+print(set1) # {1,2,3,4,5}
+print(set2) # {'apple', 'banana', 'cherry'}
+print(type(set1)) # <class 'set'>
+# why use sets instead of lists?
+# sets automatically handle duplicate items
+# examples:
+set_with_duplicates = {1,2,2,3,4,4,5}
+print(set_with_duplicates) # {1,2,3,4,5}
+# sets are useful for membership testing
+print(3 in set1) # True
+print(6 in set1) # False
+# tuples examples:
+tuple1 = (1,2,3,4,5)
+tuple2 = ("apple", "banana", "cherry")
+print(tuple1) # (1,2,3,4,5)
+print(tuple2) # ('apple', 'banana', 'cherry')
+print(type(tuple1)) # <class 'tuple'>
+
+# MOST IMPORTANT QUESTION: WHY USE TUPLES INSTEAD OF LISTS?
+# tuples are immutable, meaning they
+# cannot be changed after creation
+# this makes tuples useful
+# for storing data that should not be modified
+# examples:
+social_security_number = (123444, 4444445, 5676789)

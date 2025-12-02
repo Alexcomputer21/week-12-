@@ -12,3 +12,12 @@
 
 # Starter Code:
 
+temperature = int(input("What is today's temperature: "))
+if temperature < -10 or temperature > 110:
+    print("Extreme temperature warning!")
+elif -9 <= temperature <= 60:
+    print("It's cold")
+elif 61 <= temperature <= 90:
+    print("It's warm")
+elif 91 <= temperature <=109:
+    print("It's hot")
